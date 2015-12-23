@@ -1,0 +1,295 @@
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  background-color: #fff;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus,
+a:hover,
+a:visited {
+ text-decoration: none;
+ background-color: transparent;
+ }
+
+.btn-cta {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 10px 12px;
+  background-color: #0088CB;
+  border-color: #0088CB;
+  border-radius: 0;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+/* =============================================================================
+   Navbar
+============================================================================= */
+
+.navbar-inverse {
+    background-color: #333;
+    border-color: #333;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-brand {
+  height: 65px;
+  line-height: 18px;
+  padding: 14px 20px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.navbar-brand span {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+/* =============================================================================
+   Intro
+============================================================================= */
+
+.intro-img {
+  padding-bottom: 20px;
+}
+
+#intro h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#intro p {
+  font-size: 25px;
+}
+
+#intro .btn-cta {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  #intro .breathe {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  #intro .breathe {
+    padding-top: 60px;
+  }
+  .lead {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #intro .breathe {
+    padding-top: 30px;
+  }
+}
+
+
+/* =============================================================================
+   Carousel
+============================================================================= */
+
+.slick-slider {
+  margin: 30px 0px;
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+       -o-transition: all 1s ease;
+          transition: all 1s ease;
+  }
+
+.grayscale:hover {
+  -webkit-filter: grayscale(0%);
+}
+
+#carousel h3 {
+  padding: 45px 0;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 30px;
+  color: #333;
+}
+
+/* =============================================================================
+   Training, Business Hacker, Consulting
+============================================================================= */
+
+.gray-bg {
+  background-color: #F2F2F2;
+}
+
+#training .breathe,
+#business-hacker .breathe,
+#consulting .breathe {
+  padding-top: 50px;
+}
+
+#training h2,
+#business-hacker h2,
+#consulting h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#training p,
+#business-hacker p,
+#consulting p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.2em;
+}
+
+/* =============================================================================
+   Services
+============================================================================= */
+
+#services p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.2em;
+}
+
+#services .breathe {
+  padding: 70px 0;
+}
+
+#services h3 {
+  padding: 40px 0;
+}
+
+#services img.icons {
+  padding: 25px 0;
+}
+
+/* =============================================================================
+   Testimonies
+============================================================================= */
+
+#testimonies {
+  padding-bottom: 50px;
+}
+
+#testimonies h3 {
+  padding: 50px 0;
+}
+
+#testimonies p {
+  line-height: 1.3em;
+}
+
+/* =============================================================================
+   Team
+============================================================================= */
+
+#team .breathe {
+  padding: 70px 0;
+}
+
+#team h4 {
+  font-size: 30px;
+}
+
+#team p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.2em;
+}
+
+
+/* =============================================================================
+   Form
+============================================================================= */
+
+.dark-gray-bg {
+  background-color: #333;
+}
+
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label,
+.has-error .help-block, .has-error .radio, .has-error .radio-inline,
+.has-error.checkbox label, .has-error.checkbox-inline label,
+.has-error.radio label, .has-error.radio-inline label {
+    font-weight: 700;
+    color: #D11F26;
+}
+
+.form-control {
+  height: 40px;
+  font-size: 20px;
+  border-radius: 0;
+}
+
+#form .breathe {
+  padding: 50px 0;
+}
+
+#form .copyright p {
+  font-size: 10px;
+  font-weight: lighter;
+  color: #fff;
+}
