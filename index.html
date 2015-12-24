@@ -7,11 +7,18 @@
     <title>lean</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Fonts & Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Slick Carousel -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"/>
+    <!-- Carousel -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
     <!-- Bootstrap form validator -->
     <link  rel="stylesheet" type="text/css" href="http://formvalidation.io/vendor/formvalidation/css/formValidation.min.css"/>
+    <!-- Text animation -->
+    <link  rel="stylesheet" type="text/css" href="css/wordrotator.css"/>
     <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -34,8 +41,8 @@
     </nav>
 
   <!-- Intro -->
-    <section id="intro" class="gray-bg">
-      <div class="container gray-bg">
+    <section id="intro">
+      <div class="container">
         <div class="row">
           <div class="col-sm-6 col-md-5 col-md-offset-1 visible-sm visible-md visible-lg">
             <div class="intro-img">
@@ -45,7 +52,7 @@
           <div class="col-sm-6 col-md-6 breathe">
             <div class="lead">
               <p >Entrena tu equipo en</p>
-              <h1>Desarollo de clientes</h1>
+              <h1><span id="animation-container"></span></h1>
               <p >convierte ideas en </br>negocios rentables</p>
               <a class="btn btn-primary btn-cta" href="#form" role="button">Solicitar una llamada</a>
             </div>
@@ -54,21 +61,45 @@
       </div>
     </section>
 
-  <!-- recomendation -->
+    <!-- recomendation -->
+      <section id="carousel">
+        <div class="container">
+          <div class="logo-carousel">
+            <img src="images/logos/anahuac.png" class="img-responsive grayscale">
+            <img src="images/logos/appsco.png" class="img-responsive grayscale">
+            <img src="images/logos/andes.png" class="img-responsive grayscale">
+            <img src="images/logos/columbia.png" class="img-responsive grayscale">
+            <img src="images/logos/ge.png" class="img-responsive grayscale">
+            <img src="images/logos/mindefensa.png" class="img-responsive grayscale">
+            <img src="images/logos/inadem.png" class="img-responsive grayscale">
+            <img src="images/logos/itau.png" class="img-responsive grayscale">
+            <img src="images/logos/plenum.png" class="img-responsive grayscale">
+            <img src="images/logos/masschallenge.png" class="img-responsive grayscale">
+            <img src="images/logos/wayra.png" class="img-responsive grayscale">
+          </div>
+          <div class="text-center">
+            <h3>Como podemos ayudarte</h3>
+          </div>
+        </div>
+      </section>
+
+  <!-- Carousel -->
     <section id="carousel">
-      <div class="container">
+      <div class="">
         <div class="slick-carousel">
-          <img src="images/logos/anahuac.png" class="grayscale">
-          <img src="images/logos/appsco.png" class="grayscale">
-          <img src="images/logos/andes.png" class="grayscale">
-          <img src="images/logos/columbia.png" class="grayscale">
-          <img src="images/logos/ge.png" class="grayscale">
-          <img src="images/logos/mindefensa.png" class="grayscale">
-          <img src="images/logos/inadem.png" class="grayscale">
-          <img src="images/logos/itau.png" class="grayscale">
-          <img src="images/logos/plenum.png" class="grayscale">
-          <img src="images/logos/masschallenge.png" class="grayscale">
-          <img src="images/logos/wayra.png" class="grayscale">
+          <ul class="bxslider">
+          <li><img src="images/logos/anahuac.png" class="grayscale"></li>
+          <li><img src="images/logos/appsco.png" class="grayscale"></li>
+          <li><img src="images/logos/andes.png" class="grayscale"></li>
+          <li><img src="images/logos/columbia.png" class="grayscale"></li>
+          <li><img src="images/logos/ge.png" class="grayscale"></li>
+          <li><img src="images/logos/mindefensa.png" class="grayscale"></li>
+          <li><img src="images/logos/inadem.png" class="grayscale"></li>
+          <li><img src="images/logos/itau.png" class="grayscale"></li>
+          <li><img src="images/logos/plenum.png" class="grayscale"></li>
+          <li><img src="images/logos/masschallenge.png" class="grayscale"></li>
+          <li><img src="images/logos/wayra.png" class="grayscale"></li>
+          </ul>
         </div>
         <div class="text-center">
           <h3>Como podemos ayudarte</h3>
@@ -162,36 +193,66 @@
     <section id="testimonies">
       <div class="container text-center">
         <div class="row breathe">
-            <a class="btn btn-primary btn-cta" href="#form" role="button">Solicitar una llamada</a>
-            <h3>Te ayudamos a lanzar productos exitosos </br>apalancados en tecnología</h3>
-          <div class="col-lg-4">
+          <a class="btn btn-primary btn-cta" href="#form" role="button">Solicitar una llamada</a>
+          <h3>Te ayudamos a lanzar productos exitosos </br>apalancados en tecnología</h3>
+          <div class="col-md-4">
             <img class="img-circle" src="images/roxana.jpg" alt="">
             <h4>Roxana Vergara </h4>
-            <h5>Co-Founder <a href="">Vendty</a></h5>
-            <p>Excelente asesoría. Nos orientaron en que estrategias enfocarnos,
+            <h5 class="text-muted">Co-Founder <a href="">Vendty</a></h5>
+            <p>“Excelente asesoría. Nos orientaron en que estrategias enfocarnos,
             como validarlas y que herramientas usar para poder consolidar y
             hacer crecer nuestro negocio. Estrategias y metodologías sencillas
-            para aplicar rápidamente</p>
+            para aplicar rápidamente”</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-4">
             <img class="img-circle" src="images/camilo.jpg" alt="">
             <h4>Camilo Jimenez Fuentes</h4>
-            <h5>Co founder <a href="">Las Partes</a></h5>
-            <p>No se como agradecer el incansable apoyo y asesoría precisa para
+            <h5 class="text-muted">Co founder <a href="">Las Partes</a></h5>
+            <p>“No se como agradecer el incansable apoyo y asesoría precisa para
             mi startup Las Partes. Después de cerrar dos rondas de inversión
             y alcanzar 1MM USD anual de run rate, miro atrás y encuentro que
-            no habría sido posible sin su ayuda.</p>
+            no habría sido posible sin su ayuda”</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-4">
             <img class="img-circle" src="images/felipe.jpg" alt="">
             <h4>Felipe Varkala</h4>
-            <h5>Business Development Manager <a href="">Faber Castell</a></h5>
-            <p>Impresionante  experiencia y conocimiento en la metodología de
+            <h5 class="text-muted">Business Development Manager <a href="">Faber Castell</a></h5>
+            <p>“Impresionante  experiencia y conocimiento en la metodología de
             desarrollo de clientes si quieres construir productos grandiosos
-            sin desperdiciar tiempo y dinero</p>
+            sin desperdiciar tiempo y dinero”</p>
           </div>
         </div>
       </div>
+        <!-- <div class="testimonies-carousel">
+          <div class="text-center">
+            <img class="img-circle" src="images/roxana.jpg" alt="">
+            <h4>Roxana Vergara </h4>
+            <h5 class="text-muted">Co-Founder <a href="">Vendty</a></h5>
+            <p>“Excelente asesoría. Nos orientaron en que estrategias enfocarnos,
+            como validarlas y que herramientas usar para poder consolidar y
+            hacer crecer nuestro negocio. Estrategias y metodologías sencillas
+            para aplicar rápidamente”</p>
+          </div>
+          <div class="text-center">
+            <img class="img-circle" src="images/camilo.jpg" alt="">
+            <h4>Camilo Jimenez Fuentes</h4>
+            <h5 class="text-muted">Co founder <a href="">Las Partes</a></h5>
+            <p>“No se como agradecer el incansable apoyo y asesoría precisa para
+            mi startup Las Partes. Después de cerrar dos rondas de inversión
+            y alcanzar 1MM USD anual de run rate, miro atrás y encuentro que
+            no habría sido posible sin su ayuda”</p>
+          </div>
+          <div class="text-center">
+            <img class="img-circle" src="images/felipe.jpg" alt="">
+            <h4>Felipe Varkala</h4>
+            <h5 class="text-muted">Business Development Manager <a href="">Faber Castell</a></h5>
+            <p>“Impresionante  experiencia y conocimiento en la metodología de
+            desarrollo de clientes si quieres construir productos grandiosos
+            sin desperdiciar tiempo y dinero”</p>
+          </div>
+        </div>
+ -->
+
     </section>
 
   <!-- Team -->
@@ -201,15 +262,15 @@
           <h3>El corazón del equipo</h3>
           <div class="col-sm-6">
             <div class="team-member">
-              <img src="images/nayib.jpg" class="img-responsive img-circle" alt="">
-              <h4>Nayib Abdala</h4>
+              <img src="images/nayib.jpg" class="img-circle" alt="">
+              <h4>Nayib Abdala <a href="https://co.linkedin.com/in/nayibabdala/en"><i class="fa fa-linkedin-square"></i></a></h4>
               <p class="text-muted">Managing Partner</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="team-member">
-              <img src="images/bob.jpg" class="img-responsive img-circle" alt="">
-              <h4>Bob Dorf</h4>
+              <img src="images/bob.jpg" class="img-circle" alt="">
+              <h4>Bob Dorf <a href="https://www.linkedin.com/in/bob-dorf-6798092"><i class="fa fa-linkedin-square"></i></a></h4>
               <p class="text-muted">Chairman of the</br>Board</p>
             </div>
           </div>
@@ -266,6 +327,10 @@
     <!-- Bootstrap validator -->
     <script src="http://formvalidation.io/vendor/formvalidation/js/formValidation.min.js"></script>
     <script src="http://formvalidation.io/vendor/formvalidation/js/framework/bootstrap.min.js"></script>
+    <!-- Carousel -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!-- Wordrotator -->
+    <script src="js/wordrotator.js"></script>
     <!-- Custom Scripts -->
     <script src="js/script.js"></script>
 

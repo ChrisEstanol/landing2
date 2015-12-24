@@ -91,7 +91,7 @@ $('#contact-form').formValidation({
 
 // ============ Slick carousel ==============
 
-  $('.slick-carousel').slick({
+  $('.logo-carousel').slick({
     infinite: true,
     speed: 300,
     slidesToShow: 4,
@@ -101,8 +101,7 @@ $('#contact-form').formValidation({
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
+          slidesToScroll: 3
         }
       },
       {
@@ -125,6 +124,21 @@ $('#contact-form').formValidation({
     ]
   });
 
+  $('.testimonies-carousel').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1
+
+  });
+
+  $('.bxslider').bxSlider({
+   slideWidth: 300,
+   minSlides: 1,
+   maxSlides: 4,
+   moveSlides: 1,
+   slideMargin: 10
+ });
 // ============== Smooth scrolling ===============
 
 $(function() {
@@ -139,6 +153,20 @@ $(function() {
         return false;
       }
     }
+  });
+});
+
+
+$(function () {
+  $("#animation-container").wordsrotator({
+    autoLoop: true,             //auto rotate words
+    randomize: false,               //show random entries from the words array
+    stopOnHover: false,             //stop animation on hover
+    changeOnClick: false,           //force animation run on click
+    animationIn: "fadeInLeft",         //css class for entrace animation
+    animationOut: "fadeOut",           //css class for exit animation
+    speed: 4000,                //delay in milliseconds between two words
+    words: ['Desarrollo', 'Validacion', 'bla']
   });
 });
 

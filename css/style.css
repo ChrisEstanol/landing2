@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: 'Helvetica', Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -149,6 +149,13 @@ h6 {
    Carousel
 ============================================================================= */
 
+.bx-wrapper .bx-viewport {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  left: 0;
+}
 .slick-slider {
   margin: 30px 0px;
 }
@@ -174,6 +181,14 @@ h6 {
 .slick-prev:before {
   font-size: 30px;
   color: #333;
+}
+
+@media (max-width: 768px) {
+  #carousel  .container {
+    margin: auto;
+    padding: 20px 40px;
+    width: auto;
+  }
 }
 
 /* =============================================================================
@@ -240,7 +255,18 @@ h6 {
 }
 
 #testimonies p {
+  font-style: italic;
   line-height: 1.3em;
+}
+
+#testimonies img  {
+  height: 170px;
+}
+
+@media (min-width: 992px) {
+  #testimonies p {
+    padding: 0 5%;
+  }
 }
 
 /* =============================================================================
@@ -261,6 +287,14 @@ h6 {
   line-height: 1.2em;
 }
 
+#team .fa {
+  padding-left: 10px;
+  color: #0B84BE;
+}
+
+#team .img-circle {
+  border: 4px solid #fff;
+}
 
 /* =============================================================================
    Form
