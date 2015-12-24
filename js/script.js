@@ -91,7 +91,7 @@ $('#contact-form').formValidation({
 
 // ============ Slick carousel ==============
 
-  $('.logo-carousel').slick({
+  $('.slick-carousel').slick({
     infinite: true,
     speed: 300,
     slidesToShow: 4,
