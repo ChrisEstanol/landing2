@@ -168,7 +168,7 @@ h6 {
   color: #333;
 }
 
-.grayscale {
+/*.grayscale {
   -webkit-filter: grayscale(100%);
   -webkit-transition: all 0.2s ease;
      -moz-transition: all 0.2s ease;
@@ -179,7 +179,7 @@ h6 {
 
 .grayscale:hover {
   -webkit-filter: grayscale(0%);
-}
+}*/
 
 #carousel h3 {
   padding: 45px 0;
