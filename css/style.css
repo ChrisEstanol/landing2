@@ -149,15 +149,19 @@ h6 {
    Carousel
 ============================================================================= */
 
-.bx-wrapper .bx-viewport {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  left: 0;
-}
 .slick-slider {
   margin: 30px 0px;
+}
+
+.slick-slide img {
+  display: block;
+  width: 100%;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 30px;
+  color: #333;
 }
 
 .grayscale {
@@ -175,12 +179,6 @@ h6 {
 
 #carousel h3 {
   padding: 45px 0;
-}
-
-.slick-next:before,
-.slick-prev:before {
-  font-size: 30px;
-  color: #333;
 }
 
 @media (max-width: 768px) {
