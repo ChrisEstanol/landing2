@@ -118,17 +118,30 @@ $('#contact-form').formValidation({
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 
   $('.testimonies-carousel').slick({
     infinite: true,
     speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
   $('.team-carousel').slick({
@@ -164,8 +177,8 @@ $(function () {
     changeOnClick: false,           //force animation run on click
     animationIn: "fadeInLeft",         //css class for entrace animation
     animationOut: "fadeOut",           //css class for exit animation
-    speed: 4000,                //delay in milliseconds between two words
-    words: ['Desarrollo', 'Validacion', 'bla']
+    speed: 2000,                //delay in milliseconds between two words
+    words: ['Desarrollo de Clientes', 'Estrategia de Producto', 'Modelos de Negocio', 'Validación de Ideas']
   });
 });
 

@@ -168,10 +168,11 @@ h6 {
   color: #333;
 }
 
-@media (min-width: 992px) {
-  .grayscale {
-    -webkit-filter: grayscale(100%);
-  }
+.grayscale {
+  -webkit-filter: grayscale(100%);
+}
+
+@media (min-width: 1023px) {
   .grayscale:hover {
     -webkit-filter: grayscale(0%);
   }
@@ -215,7 +216,7 @@ h6 {
 #consulting p {
   font-size: 20px;
   font-weight: lighter;
-  line-height: 1.2em;
+  line-height: 1.5em;
 }
 
 @media (max-width: 992px) {
@@ -261,38 +262,28 @@ h6 {
   padding: 50px 0;
 }
 
-#testimonies p,
-#testimonies-sm p {
+#testimonies p {
   font-style: italic;
   line-height: 1.3em;
+  padding: 0 5%;
 }
 
-#testimonies img  {
-  height: 170px;
+#testimonies img {
+  width: 50%;
+  margin: 0 auto;
 }
 
-@media (min-width: 992px) {
-  #testimonies p {
-    padding: 0 5%;
-  }
-}
-@media (max-width: 1200px) {
-#testimonies-sm .slick-slide img {
-    width: 30%;
-    margin: 0 auto;
-  }
-}
 @media (max-width: 768px) {
-  #testimonies-sm  .container {
+  #testimonies  .container {
     margin: auto;
     padding: 20px 40px;
     width: auto;
   }
+  #testimonies h3 {
+    padding: 30px 0;
+  }
 }
 
-#testimonies-sm h3 {
-  padding: 30px 0;
-}
 
 
 /* =============================================================================
