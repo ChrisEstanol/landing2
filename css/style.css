@@ -138,6 +138,7 @@ h6 {
   margin: 10px 0px;
 }
 
+
 .slick-slide img {
   display: block;
   width: 100%;
@@ -244,6 +245,10 @@ h6 {
   padding-bottom: 50px;
 }
 
+#testimonies .slick-slider {
+  margin: 10px 0px;
+}
+
 #testimonies h3 {
   padding: 50px 0;
 }
@@ -260,6 +265,9 @@ h6 {
 }
 
 @media (max-width: 768px) {
+  #testimonies {
+    padding-bottom: 20px;
+  }
   #testimonies  .container {
     margin: auto;
     padding: 20px 40px;
