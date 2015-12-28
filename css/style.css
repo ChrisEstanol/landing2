@@ -313,6 +313,12 @@ h6 {
   line-height: 1.5em;
 }
 
+#team .team-text {
+  max-width: 250px;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
 #team .fa,
 #team-sm .fa {
   padding-left: 10px;
