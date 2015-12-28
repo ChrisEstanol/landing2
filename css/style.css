@@ -340,12 +340,20 @@ h6 {
   background-color: #333;
 }
 
+#form p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label,
 .has-error .help-block, .has-error .radio, .has-error .radio-inline,
 .has-error.checkbox label, .has-error.checkbox-inline label,
 .has-error.radio label, .has-error.radio-inline label {
-    font-weight: 700;
-    color: #D11F26;
+  font-weight: 700;
+  color: #D11F26;
 }
 
 .form-control {
