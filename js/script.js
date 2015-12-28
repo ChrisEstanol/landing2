@@ -11,14 +11,14 @@ $('#contact-form').formValidation({
   },
   // List of fields and their validation rules
   fields: {
-    NOMBRE: {
+    FNAME: {
       validators: {
         notEmpty: {
           message: 'Se requiere un nombre'
         }
       }
     },
-    EMPRESA: {
+    EMPRESAN: {
       validators: {
         notEmpty: {
           message: 'Se requiere un nombre de empresa'
@@ -39,17 +39,17 @@ $('#contact-form').formValidation({
         }
       }
     },
-    TEL: {
+    PHONE: {
       validators: {
         notEmpty: {
           message: 'Se requiere un teléfono'
         }
       }
     },
-    MMERGE4: {
+    RETO: {
       validators: {
         notEmpty: {
-          message: 'Se requiere un nombre de empresa'
+          message: 'Se requiere un reto'
         }
       }
     }
