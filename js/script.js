@@ -67,7 +67,7 @@ $('#contact-form').formValidation({
     function register($form) {
       $.ajax({
         type: $form.attr('method'),
-        url: "http://lache.us3.list-manage.com/subscribe/post-json?u=e6176f7abb276306fe67f2ba8&amp;id=5fc0d49b67&c=?",
+        url: "http://camp.us11.list-manage.com/subscribe/post-json?u=6c222182eddc406117f0fae91&amp;id=75f78d1409&c=?",
         data: $form.serialize(),
         cache       : false,
         dataType    : 'json',
