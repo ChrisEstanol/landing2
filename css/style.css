@@ -34,8 +34,8 @@ a:visited {
   font-size: 1.2em;
   font-weight: 700;
   padding: 10px 12px;
-  background-color: #0088CB;
-  border-color: #0088CB;
+  background-color: #1B89CB;
+  border-color: #1B89CB;
   border-radius: 0;
 }
 
@@ -75,31 +75,16 @@ h6 {
    Navbar
 ============================================================================= */
 
-.navbar-inverse {
-    background-color: #333;
-    border-color: #333;
-}
-
-.navbar-inverse .navbar-brand {
-    color: #fff;
-}
-
-.navbar-brand {
-  height: 65px;
-  line-height: 18px;
-  padding: 14px 20px;
-  font-weight: 700;
-  font-size: 30px;
-}
 
 #logo img {
   padding-top: 20px;
   width: 130px;
 }
 
-.navbar {
-  border-radius: 0;
-  margin-bottom: 0;
+@media (max-width: 767px) {
+  #logo img {
+    padding: 20px;
+  }
 }
 
 /* =============================================================================
@@ -209,6 +194,7 @@ h6 {
 #consulting h2 {
   font-size: 40px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 #training p,
@@ -235,7 +221,7 @@ h6 {
 #services p {
   font-size: 20px;
   font-weight: lighter;
-  line-height: 1.2em;
+  line-height: 1.5em;
 }
 
 #services .breathe {
@@ -294,6 +280,10 @@ h6 {
   padding: 70px 0;
 }
 
+#team h3 {
+  margin-bottom: 60px;
+}
+
 #team h4 {
   font-size: 30px;
 }
@@ -301,7 +291,7 @@ h6 {
 #team p {
   font-size: 20px;
   font-weight: lighter;
-  line-height: 1.2em;
+  line-height: 1.5em;
 }
 
 #team .fa,
@@ -315,14 +305,17 @@ h6 {
   border: 4px solid #fff;
 }
 
-#team .breathe {
+#team-sm .breathe {
   padding: 20px 0;
 }
 
+#team-sm h3 {
+  margin-bottom: 40px;
+}
+
 .experts p {
-  margin-top:50px;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 @media (max-width: 768px) {
