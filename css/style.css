@@ -149,6 +149,10 @@ h6 {
   margin: 10px 0px;
 }
 
+#carousel h3 {
+  padding: 45px 0;
+}
+
 .slick-slide img {
   display: block;
   width: 100%;
@@ -174,15 +178,19 @@ h6 {
   }
 }
 
-#carousel h3 {
-  padding: 45px 0;
-}
 
 @media (max-width: 768px) {
   #carousel  .container {
     margin: auto;
     padding: 20px 40px;
     width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .slick-slide img {
+    margin: 0 auto;
+    width: 60%;
   }
 }
 
